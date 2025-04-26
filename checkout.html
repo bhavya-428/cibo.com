@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <form id="checkoutForm">
+    <fieldset>
+      <legend>Shipping Information</legend>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" required></textarea><br><br>
+
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city" required><br><br>
+
+      <label for="pin">pin Code:</label><br>
+      <input type="text" id="pin" name="pin" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment type</legend>
+     <input type="radio" id="cod" name="payment" value="COD(Cash On Delivery)">
+  <label for="cod">COD(Cash On Delivery)</label><br>
+  <input type="radio" id="online"  name="payment"  value="Online payment">    
+<label for="online">Online payment</label><br>
+<input type="radio" id="credit"  name="payment"  value="Credit Card payment">    
+<label for="credit">Credit card payment</label><br>
+   </fieldset> <button type="submit" onclick="msg()">Place Order</button>
+  </form>
+
+  <script>
+function msg()
+{
+alert("your order have been placed");
+}
+
+ 
+
+  </script>
+
+</body>
+</html>
